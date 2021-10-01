@@ -93,4 +93,7 @@ public class ProductEntity implements Serializable {
     @OneToMany(mappedBy = "product")
     List<ReceiptDetailEntity> receiptDetails ;
 
+    @OneToMany(mappedBy = "product")
+    List<FavoriteEntity> favorites ;
+
 }
